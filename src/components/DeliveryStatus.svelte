@@ -1,8 +1,13 @@
 <script type='ts'>
   import ProjectSummary from './ProjectSummary.svelte';
+  import Button from './Button.svelte';
   import { projects } from '../stores/data';
 </script>
 <section>
+  <nav>
+    <Button handler={ projects.refresh } name="Refresh Data" />
+  </nav>
+
   <ul>
     {#each $projects as project}
       <li>
@@ -30,5 +35,9 @@
     box-shadow: 0 4px 5px #aaae;
     top: -2px;
     position: relative;
+  }
+  nav {
+    display: flex;
+    justify-content: end;
   }
 </style>

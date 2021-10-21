@@ -39,10 +39,13 @@ async function getData() {
 function createDataStore() {
   const { subscribe, set } = writable([]);
 
-  const setup = async () => set(await getData());
-  setup();
+  const refresh = async () => set(await getData());
+  refresh();
 
-  return { subscribe };
+  return {
+    subscribe,
+    refresh,
+  };
 }
 
 export const projects = createDataStore();
