@@ -6,7 +6,7 @@
 
 <div>
   <header>
-    <h1>Open Innovations Delivery Tracker</h1>
+    <h1>Open Innovations Delivery</h1>
     {#if $isAuthenticated}
       <p>{$userFullName}</p>
       <Button handler={logout} name="Logout" />
