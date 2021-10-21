@@ -30,13 +30,15 @@ function serve() {
 	};
 }
 
+const targetDir = 'docs';
+
 export default {
 	input: 'src/main.ts',
 	output: {
 		sourcemap: true,
 		format: 'iife',
 		name: 'app',
-		file: 'public/build/bundle.js'
+		file: targetDir + '/build/bundle.js'
 	},
 	plugins: [
 		svelte({
@@ -69,9 +71,9 @@ export default {
 		// the bundle has been generated
 		!production && serve(),
 
-		// Watch the `public` directory and refresh the
+		// Watch the target directory and refresh the
 		// browser on changes when not in production
-		!production && livereload('public'),
+		!production && livereload(targetDir),
 
 		// If we're building for production (npm run build
 		// instead of npm run dev), minify
