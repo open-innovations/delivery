@@ -1,0 +1,6 @@
+name,customer,stage,due_by,note,state,rag,value
+DFES 2021,UKPN,proposal,2021-12-10,Waiting for Sponsorship agreement,blocked,amber,12000
+Ecosystem visualisation,UKPN,delivery,,Working with ODI HQ on content,active,green,
+Data Triage,UKPN,delivery,2021-11-01,Moving into user testing,active,green,
+Data Partnership,LDF,delivery,,Need to set date. Working on data and dashboard design. Need to contact LDF team,active,amber,5000
+Diversity Data,Yorkshire Water,deliver,2021-11-01,A couple of new leads to follow up. Time for a chaser,active,green,
