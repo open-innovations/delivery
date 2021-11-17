@@ -29,6 +29,7 @@
     border: 1px solid #ddd;
     border-radius: 0.5em;
     box-shadow: 0 2px 5px #aaae;
+    overflow: hidden;
   }
   li:hover {
     box-shadow: 0 4px 5px #aaae;
