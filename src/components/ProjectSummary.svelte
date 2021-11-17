@@ -1,5 +1,6 @@
 <script>
   import Warning from './Warning.svelte';
+  export let id;
   export let name;
   export let customer;
   export let link;
@@ -18,6 +19,7 @@
       >{:else}{name}{/if}
   </h1>
   <table>
+    <tr><th>Project ID</th><td>{ id }</td></tr>
     <tr>
       <th>Customer</th><td>{customer}</td>
     </tr>
