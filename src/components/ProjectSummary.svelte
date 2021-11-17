@@ -10,8 +10,6 @@
   export let state;
   export let due_by;
   $: blocked = state === 'blocked';
-
-  console.log(state);
 </script>
 
 <section class:dropped={state === 'dropped'}>
