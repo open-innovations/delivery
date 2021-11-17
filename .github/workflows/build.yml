@@ -28,9 +28,9 @@ jobs:
         run: |
           npm install
           npm run build
-      
-      # Push the changes back to the repo
-      - uses: ad-m/github-push-action@v0.6.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "Automated build"
+          git push
+
