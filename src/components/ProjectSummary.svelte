@@ -31,7 +31,7 @@
   </tr>
 </table>
 <p>{note}</p>
-<section>
+</section>
 
 <style>
   h1 {
