@@ -2,37 +2,41 @@
   import Warning from './Warning.svelte';
   export let name;
   export let customer;
+  export let link;
   export let stage;
   export let value;
   export let note;
   export let rag;
   export let state;
   export let due_by;
-  $: blocked = state === 'blocked'
+  $: blocked = state === 'blocked';
 
   console.log(state);
 </script>
 
-<section class:dropped="{ state === 'dropped' }">
-<h1>{#if blocked}<Warning /> {/if}{name}</h1>
-<table>
-  <tr>
-    <th>Customer</th><td>{ customer }</td>
-  </tr>
-  <tr>
-    <th>Status</th><td class="status { rag }">{ rag }</td>
-  </tr>
-  <tr>
-    <th>Stage</th><td>{stage}</td>
-  </tr>
-  <tr>
-    <th>Due date</th><td>{ due_by.toDateString() }</td>
-  </tr>
-  <tr>
-    <th>Value</th><td>{@html value ? '&pound;' + value : 'Not captured'}</td>
-  </tr>
-</table>
-<p>{note}</p>
+<section class:dropped={state === 'dropped'}>
+  <h1>
+    {#if blocked}<Warning /> {/if}{#if link}<a href={link}>{name}</a
+      >{:else}{name}{/if}
+  </h1>
+  <table>
+    <tr>
+      <th>Customer</th><td>{customer}</td>
+    </tr>
+    <tr>
+      <th>Status</th><td class="status {rag}">{rag}</td>
+    </tr>
+    <tr>
+      <th>Stage</th><td>{stage}</td>
+    </tr>
+    <tr>
+      <th>Due date</th><td>{due_by.toDateString()}</td>
+    </tr>
+    <tr>
+      <th>Value</th><td>{@html value ? '&pound;' + value : 'Not captured'}</td>
+    </tr>
+  </table>
+  <p>{note}</p>
 </section>
 
 <style>
