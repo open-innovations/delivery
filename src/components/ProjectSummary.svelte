@@ -9,9 +9,11 @@
   export let state;
   export let due_by;
   $: blocked = state === 'blocked'
+
+  console.log(state);
 </script>
 
-<section class:dropped={ state === 'dropped' }>
+<section class:dropped="{ state === 'dropped' }">
 <h1>{#if blocked}<Warning /> {/if}{name}</h1>
 <table>
   <tr>
@@ -34,6 +36,9 @@
 </section>
 
 <style>
+  section {
+    padding: 1em;
+  }
   h1 {
     padding: 0;
     margin: 0;
@@ -65,7 +70,7 @@
     text-align: left;
   }
   .dropped {
-    color: #444;
-    background: #bbb;
+    color: #555;
+    background: #aaa;
   }
 </style>

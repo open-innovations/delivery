@@ -26,7 +26,6 @@
   }
   li {
     list-style-type: none;
-    padding: 1em;
     border: 1px solid #ddd;
     border-radius: 0.5em;
     box-shadow: 0 2px 5px #aaae;
