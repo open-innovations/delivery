@@ -11,6 +11,7 @@
   $: blocked = state === 'blocked'
 </script>
 
+<section class:dropped={ state === 'dropped' }>
 <h1>{#if blocked}<Warning /> {/if}{name}</h1>
 <table>
   <tr>
@@ -30,6 +31,7 @@
   </tr>
 </table>
 <p>{note}</p>
+<section>
 
 <style>
   h1 {
@@ -61,5 +63,9 @@
   }
   td {
     text-align: left;
+  }
+  .dropped {
+    color: #444;
+    background: #bbb;
   }
 </style>

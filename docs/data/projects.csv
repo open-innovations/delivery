@@ -1,7 +1,7 @@
 name,customer,stage,due_by,note,state,rag,value
-DFES 2021,UKPN,proposal,2021-12-10,Waiting for Sponsorship agreement,blocked,amber,12000
+DFES 2021,UKPN,proposal,2021-12-10,Waiting for Sponsorship agreement,dropped,amber,12000
 DFES 2021,NPG,delivery,2021-12-10,Progressing well,active,green,
-Ecosystem visualisation,UKPN,delivery,,Working with ODI HQ on content,active,green,
-Data Triage,UKPN,delivery,2021-11-01,Moving into user testing,active,green,
-Data Partnership,LDF,delivery,,Need to set date. Working progressing well on data and dashboard design. Meeting to be held w/c 25 Oct,active,green,5000
-Diversity Data,Yorkshire Water,deliver,2021-11-01,A couple of new leads to follow up. Time for a chaser,active,green,
+Ecosystem visualisation,UKPN,delivery,,Need to re-engage with this work,active,amber,
+Data Triage,UKPN,delivery,2021-11-01,Testing complete. Finalising feedback,active,green,
+Data Partnership,LDF,delivery,,Data / dashboard in good state. Need to agree final form with LDF team.,active,green,5000
+Diversity Data,Yorkshire Water,deliver,2021-11-01,Have now got 4 organisations published. Leeds Uni to correct their data. Blog drafting in progress.,active,green,
